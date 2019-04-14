@@ -1,0 +1,65 @@
+
+.wrap {
+
+  &._overlay {
+    @extend %wrap_overlay;
+  }
+
+  &._hero {
+    @extend %wrap_block;
+    max-width: 768px;
+    @include cf;
+  }
+
+  &._nav {
+    @extend %wrap_block;
+    max-width: 768px;
+  }
+
+  &._about {
+    @extend %wrap_block;
+    max-width: 768px;
+    @include cf;
+  }
+
+  &._voice {
+    @extend %wrap_block;
+    max-width: 768px;
+  }
+
+  &._embed {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  &._pulp {
+    background-color: #e6e6e6;
+    @extend %wrap_block;
+    border: 2px solid;
+    padding-top: 24px;
+    max-width: 600px;
+    height: 116px;
+    @include cf;
+  }
+
+  &._motion {
+    @extend %wrap_block;
+    max-width: 768px;
+  }
+
+  &._acting {
+    @extend %wrap_block;
+    max-width: 768px;
+  }
+
+  &._client {
+    background-color: rgba(black,0.05);
+    padding: 10px;
+  }
+
+  &._contact {
+    @extend %wrap_block;
+    max-width: 768px;
+  }
+}

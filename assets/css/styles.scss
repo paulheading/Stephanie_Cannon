@@ -1,0 +1,89 @@
+---
+---
+
+@import
+  'normalize.css',
+  'futuro',
+  'helpers',
+  'base',
+  'area',
+  // 'body',
+  // 'btn',
+  // 'canvas',
+  'copy',
+  // 'entry',
+  // 'folder',
+  // 'form',
+  // 'input',
+  'overlay',
+  // 'layout',
+  'lnk',
+  // 'row',
+  'split',
+  // 'svg',
+  // 'textarea',
+  'title',
+  // 'topbar',
+  // 'visual',
+  // 'window',
+  'wrap'
+  // 'video'
+  ;
+
+.table {
+  cursor: pointer;
+  @include cf;
+}
+
+.row {
+  border-left: 2px solid;
+  border-right: 2px solid;
+
+  &:hover {
+    background-color: rgba(black,0.1);
+  }
+
+  &:last-child {
+    border-bottom: 2px solid;
+  }
+
+  + .row {
+    border-top: 2px solid;
+  }
+}
+
+.col {
+  float: left;
+  width: 100%;
+
+  &:first-child {
+    .row:first-child {
+      border-top: 2px solid;
+    }
+  }
+
+  @media#{$min768w} {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 50%;
+
+    .row:first-child {
+      border-top: 2px solid;
+    }
+  }
+}
+
+.acc {
+  &._embed {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.video {
+  &._motion {
+    background-color: black;
+    padding-top: 62.5%;
+    margin-top: 20px;
+  }
+}

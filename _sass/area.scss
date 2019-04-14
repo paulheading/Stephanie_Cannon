@@ -1,0 +1,50 @@
+
+.area {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  &._hero {
+    border-bottom: 2px solid black;
+    padding: 60px 40px;
+    background: gray;
+    color: white;
+
+    @media#{$min768w} {
+      background: url('/assets/img/banner.jpg') center;
+      background-size: auto 390px;
+    }
+  }
+
+  &._voice {
+    padding: 0 40px;
+  }
+
+  &._nav {
+    border-bottom: 2px solid;
+  }
+
+  &._about {
+    padding: 20px 40px 0;
+  }
+
+  &._pulp {
+    padding: 40px 40px 0;
+  }
+
+  &._motion {
+    padding: 0 40px;
+  }
+
+  &._acting {
+    padding: 20px 40px 0;
+  }
+
+  &._contact {
+    padding: 0 40px;
+  }
+
+  &._logos {
+    padding: 40px;
+  }
+}

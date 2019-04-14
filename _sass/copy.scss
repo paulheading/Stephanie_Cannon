@@ -1,0 +1,13 @@
+
+.copy {
+
+  &._hero {
+    max-width: 400px;
+  }
+
+  &._pulp {
+    @media#{$min768w} {
+      padding-right: 20px;
+    }
+  }
+}

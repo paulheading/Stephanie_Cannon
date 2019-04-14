@@ -1,0 +1,32 @@
+
+.lnk {
+  &._nav {
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    padding-bottom: 6px;
+    padding-top: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+
+    &:hover {
+      border-bottom: 4px solid black;
+    }
+
+    // &.--voice {
+    //   min-width: 140px;
+    // }
+    // &.--about {
+    //   min-width: 60px;
+    // }
+    // &.--motion {
+    //   min-width: 145px;
+    // }
+    // &.--acting {
+    //   min-width: 65px;
+    // }
+    // &.--contact {
+    //   min-width: 75px;
+    // }
+  }
+}

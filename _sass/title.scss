@@ -1,0 +1,55 @@
+
+.title {
+
+  &._hero {
+    padding-bottom: 30px;
+    max-width: 400px;
+    line-height: 1.1;
+    font-size: 40px;
+  }
+
+  &._about {
+    padding: 20px 0;
+    font-size: 30px;
+
+    @media#{$min768w} {
+      padding: 0 0 20px;
+    }
+  }
+
+  &._voice {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  &._embed {
+    padding: 10px;
+  }
+
+  &._motion {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  &._acting {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+
+    @media#{$min768w} {
+      padding: 0 0 20px;
+    }
+  }
+
+  &._contact {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  &._client {
+    font-size: 20px;
+  }
+}
