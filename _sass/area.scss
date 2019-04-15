@@ -5,11 +5,7 @@
   z-index: 2;
 
   + .area {
-    margin-top: 20px;
-
-    @media#{$min640w} {
-      margin-top: 40px;
-    }
+    margin-top: 40px;
   }
 
   &._hero {

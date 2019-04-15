@@ -20,6 +20,7 @@
   max-width: 200px;
 
   @media#{$min640w} {
+    min-height: 300px;
     max-height: none;
     max-width: none;
   }

@@ -55,7 +55,7 @@ ul {
   &._logo {
     margin-left: -5px;
     list-style: none;
-    max-width: 580px;
+    max-width: 640px;
     @include cf;
   }
 }
@@ -82,15 +82,11 @@ li {
     float: left;
     width: 50%;
 
-    @media#{$min480w} {
-      width: 33.3%;
+    @media#{$min440w} {
+      width: 33%;
     }
 
     @media#{$min640w} {
-      width: 25%;
-    }
-
-    @media#{$min1024w} {
       width: 20%;
     }
   }
