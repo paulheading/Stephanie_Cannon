@@ -4,6 +4,14 @@
   overflow: hidden;
   z-index: 2;
 
+  + .area {
+    margin-top: 20px;
+
+    @media#{$min768w} {
+      margin-top: 40px;
+    }
+  }
+
   &._hero {
     border-bottom: 2px solid black;
     padding: 60px 40px;
@@ -20,16 +28,12 @@
     padding: 0 40px;
   }
 
-  &._nav {
-    border-bottom: 2px solid;
-  }
-
   &._about {
-    padding: 20px 40px 0;
+    padding: 0 40px;
   }
 
   &._pulp {
-    padding: 40px 40px 0;
+    padding: 20px 40px 0;
   }
 
   &._motion {
@@ -37,7 +41,7 @@
   }
 
   &._acting {
-    padding: 20px 40px 0;
+    padding: 0 40px;
   }
 
   &._contact {
@@ -45,6 +49,6 @@
   }
 
   &._logos {
-    padding: 40px;
+    padding: 0 40px 40px;
   }
 }

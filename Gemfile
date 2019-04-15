@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
 gem 'jekyll', '~> 3.8.3'
-gem 'futuro', :path => '../futuro'
-# '~> 0.1.4'
+gem 'futuro', '~> 0.1.5'
+#:path => '../futuro'
+
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
