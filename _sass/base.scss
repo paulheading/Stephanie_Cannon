@@ -16,16 +16,22 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 240px;
+    max-width: 200px;
     border: 2px solid;
+    @media#{$min640w} {
+      max-width: none;
+    }
   }
 
   &._acting {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 240px;
+    max-width: 200px;
     border: 2px solid;
+    @media#{$min640w} {
+      max-width: none;
+    }
   }
 }
 
@@ -76,11 +82,11 @@ li {
     float: left;
     width: 50%;
 
-    @media#{$min640w} {
+    @media#{$min480w} {
       width: 33.3%;
     }
 
-    @media#{$min768w} {
+    @media#{$min640w} {
       width: 25%;
     }
 

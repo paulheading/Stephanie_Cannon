@@ -2,9 +2,6 @@
 layout: none
 ---
 
-$(document).ready(siteFunc);
-$(document).ready(smoothScroll);
-
 function openAcc() {
   var ting = $(this),
       sibling = ting.siblings('.wrap._embed');
@@ -23,4 +20,28 @@ function openAcc() {
   }
 }
 
+function getHeight() {
+  setTimeout(function(){
+    var about = $('.split._right.--about')[0].clientHeight;
+    TweenMax.set('.img._about',{height:about});
+    var acting = $('.split._right.--acting')[0].clientHeight;
+    TweenMax.set('.img._acting',{height:acting});
+  }, 1000);
+}
+
+function rszHeight(e) {
+  var rszTimer;
+  clearTimeout(rszTimer);
+  rszTimer = setTimeout(function(){
+    getHeight();
+  },300);
+}
+
+function setup() {
+  getHeight();
+  siteFunc();
+}
+
+$(document).ready(setup);
+$(window).on('resize',rszHeight);
 $('.title._embed').click(openAcc);

@@ -7,7 +7,7 @@
   + .area {
     margin-top: 20px;
 
-    @media#{$min768w} {
+    @media#{$min640w} {
       margin-top: 40px;
     }
   }
@@ -18,7 +18,7 @@
     background: gray;
     color: white;
 
-    @media#{$min768w} {
+    @media#{$min640w} {
       background: url('/assets/img/banner.jpg') center;
       background-size: auto 390px;
     }

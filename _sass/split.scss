@@ -7,21 +7,21 @@
 
     &.--pulp {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 26%;
       }
     }
 
     &.--about {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 28%;
       }
     }
 
     &.--acting {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 28%;
       }
     }
@@ -33,7 +33,7 @@
 
     &.--hero {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 50%;
       }
     }
@@ -41,7 +41,7 @@
     &.--pulp {
       width: 100%;
       padding-top: 20px;
-      @media#{$min768w} {
+      @media#{$min640w} {
         padding-top: 0;
         width: 74%;
       }
@@ -49,7 +49,7 @@
 
     &.--about {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 72%;
         padding-left: 30px;
       }
@@ -57,7 +57,7 @@
 
     &.--acting {
       width: 100%;
-      @media#{$min768w} {
+      @media#{$min640w} {
         width: 72%;
         padding-left: 30px;
       }
