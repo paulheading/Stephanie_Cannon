@@ -16,7 +16,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 220px;
+    max-width: 240px;
     border: 2px solid;
   }
 
@@ -24,7 +24,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 220px;
+    max-width: 240px;
     border: 2px solid;
   }
 }
@@ -74,9 +74,13 @@ li {
   &._logo {
     padding: 5px;
     float: left;
-    width: 33.3%;
+    width: 50%;
 
     @media#{$min640w} {
+      width: 33.3%;
+    }
+
+    @media#{$min768w} {
       width: 25%;
     }
 
