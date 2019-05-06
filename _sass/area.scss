@@ -10,16 +10,13 @@
   }
 
   &._hero {
+    background-image: url('/assets/img/microphone_bg3.jpg');
     border-bottom: 2px solid black;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 700px;
     padding: 60px 40px 0 40px;
     background-color: gray;
     color: white;
-
-    @media#{$min640w} {
-      background-image: url('/assets/img/microphone_bg2.jpg');
-      background-position: center;
-      background-repeat: repeat-x;
-      background-size: auto 390px;
-    }
   }
 }

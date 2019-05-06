@@ -1,9 +1,11 @@
 
 .copy {
 
-  // &._hero {
-  //   font-size: 20px;
-  // }
+  &._hero {
+    &.--welcome {
+      max-width: 360px;
+    }
+  }
 
   &._pulp {
     @media#{$min640w} {
