@@ -4,6 +4,13 @@ body {
 }
 
 img {
+
+  &._microphone {
+    margin: 0 auto;
+    height: auto;
+    width: 238px;
+  }
+
   &._pulp {
     margin-right: auto;
     margin-left: auto;
@@ -36,6 +43,15 @@ img {
 }
 
 svg {
+
+  &.acc {
+    margin-right: 11px;
+    stroke-width: 4px;
+    margin-top: 11px;
+    stroke: black;
+    float: right;
+  }
+
   &#equity {
     margin-top: 20px;
   }
@@ -83,10 +99,6 @@ li {
     width: 50%;
 
     @media#{$min440w} {
-      width: 33%;
-    }
-
-    @media#{$min640w} {
       width: 20%;
     }
   }

@@ -7,27 +7,24 @@
 
   &._hero {
     @extend %wrap_block;
-    max-width: 768px;
     @include cf;
   }
 
   &._nav {
     @extend %wrap_block;
-    max-width: 768px;
   }
 
   &._about {
     @extend %wrap_block;
-    max-width: 768px;
     @include cf;
   }
 
   &._voice {
     @extend %wrap_block;
-    max-width: 768px;
   }
 
   &._embed {
+    clear: both;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -38,6 +35,7 @@
     @extend %wrap_block;
     border: 2px solid;
     padding-top: 24px;
+    margin-top: 24px;
     max-width: 600px;
     height: 116px;
     @include cf;
@@ -45,12 +43,10 @@
 
   &._motion {
     @extend %wrap_block;
-    max-width: 768px;
   }
 
   &._acting {
     @extend %wrap_block;
-    max-width: 768px;
   }
 
   &._client {
@@ -60,6 +56,5 @@
 
   &._contact {
     @extend %wrap_block;
-    max-width: 768px;
   }
 }

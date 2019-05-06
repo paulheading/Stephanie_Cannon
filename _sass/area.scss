@@ -1,50 +1,25 @@
 
 .area {
   position: relative;
+  padding: 80px 40px;
   overflow: hidden;
   z-index: 2;
 
-  + .area {
-    margin-top: 40px;
+  &:nth-child(even) {
+    background-color: rgba(black,0.05);
   }
 
   &._hero {
     border-bottom: 2px solid black;
-    padding: 60px 40px;
-    background: gray;
+    padding: 60px 40px 0 40px;
+    background-color: gray;
     color: white;
 
     @media#{$min640w} {
-      background: url('/assets/img/banner.jpg') center;
+      background-image: url('/assets/img/microphone_bg2.jpg');
+      background-position: center;
+      background-repeat: repeat-x;
       background-size: auto 390px;
     }
-  }
-
-  &._voice {
-    padding: 0 40px;
-  }
-
-  &._about {
-    padding: 0 40px;
-  }
-
-  &._pulp {
-    padding: 20px 40px 0;
-  }
-
-  &._motion {
-    padding: 0 40px;
-  }
-
-  &._acting {
-    padding: 0 40px;
-  }
-
-  &._contact {
-    padding: 0 40px;
-  }
-
-  &._logos {
-    padding: 0 40px 40px;
   }
 }

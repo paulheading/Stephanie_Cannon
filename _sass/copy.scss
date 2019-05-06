@@ -1,13 +1,17 @@
 
 .copy {
 
-  &._hero {
-    max-width: 400px;
-  }
+  // &._hero {
+  //   font-size: 20px;
+  // }
 
   &._pulp {
     @media#{$min640w} {
       padding-right: 20px;
     }
+  }
+
+  &._motion {
+    padding-bottom: 20px;
   }
 }

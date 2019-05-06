@@ -4,18 +4,27 @@ layout: none
 
 function openAcc() {
   var ting = $(this),
-      sibling = ting.siblings('.wrap._embed');
+      tingWrap = ting.children('.wrap._embed'),
+      tingIcon = ting.children('.acc');
   if(ting.hasClass('--open')) {
     var closeTl = new TimelineMax();
     closeTl
-    .to(sibling,0.3,{maxHeight:0})
-    .to(sibling,0.3,{opacity:0})
+    .add('now')
+    .to(tingIcon,0.3,{rotation:0},'now')
+    .to(tingWrap,0.3,{maxHeight:0},'now')
+    .set(tingWrap,{opacity:0})
     .set(ting,{className:'-=--open'});
   } else {
     var openTl = new TimelineMax();
     openTl
-    .to(sibling,0.3,{maxHeight:308})
-    .to(sibling,0.3,{opacity:1})
+    .add('then')
+    .to('.acc',0.3,{rotation:0},'then')
+    .to('.wrap._embed',0.3,{maxHeight:0},'then')
+    .set('.wrap._embed',{opacity:0})
+    .add('now')
+    .to(tingIcon,0.3,{rotation:225},'now')
+    .to(tingWrap,0.3,{maxHeight:308},'now')
+    .to(tingWrap,0.3,{opacity:1})
     .set(ting,{className:'+=--open'});
   }
 }
@@ -44,4 +53,4 @@ function setup() {
 
 $(document).ready(setup);
 $(window).on('resize',rszHeight);
-$('.title._embed').click(openAcc);
+$('.row._embed').click(openAcc);

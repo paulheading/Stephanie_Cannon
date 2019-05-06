@@ -17,7 +17,7 @@ GEM
     ffi (1.10.0-x64-mingw32)
     ffi (1.10.0-x86-mingw32)
     forwardable-extended (2.6.0)
-    futuro (0.1.5)
+    futuro (0.1.6)
       jekyll (~> 3.8)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
