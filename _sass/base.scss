@@ -7,9 +7,8 @@ body {
 img {
 
   &._microphone {
-    margin: 0 auto;
     height: auto;
-    width: 180px;
+    width: 160px;
 
     @media#{$min640w} {
       width: 240px;

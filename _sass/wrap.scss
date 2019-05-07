@@ -6,7 +6,8 @@
   }
 
   &._hero {
-    @extend %wrap_block;
+    max-width: 768px;
+    margin: 0 auto;
     @include cf;
   }
 

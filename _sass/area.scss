@@ -6,7 +6,7 @@
   z-index: 2;
 
   &:nth-child(even) {
-    background-color: rgba(black,0.05);
+    background-color: darken($bg,5%);
   }
 
   &._hero {
