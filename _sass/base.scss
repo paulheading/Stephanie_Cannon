@@ -8,7 +8,11 @@ img {
   &._microphone {
     margin: 0 auto;
     height: auto;
-    width: 238px;
+    width: 170px;
+
+    @media#{$min640w} {
+      width: 240px;
+    }
   }
 
   &._pulp {

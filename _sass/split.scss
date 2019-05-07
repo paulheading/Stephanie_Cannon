@@ -32,10 +32,11 @@
     width: 50%;
 
     &.--hero {
-      padding-bottom: 40px;
+      padding-bottom: 20px;
       width: 100%;
 
       @media#{$min640w} {
+        padding-bottom: 0;
         width: 50%;
       }
     }
