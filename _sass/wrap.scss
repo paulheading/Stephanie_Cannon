@@ -50,7 +50,7 @@
   }
 
   &._client {
-    background-color: rgba(black,0.05);
+    background-color: darken($bg,10%);
     padding: 10px;
   }
 
