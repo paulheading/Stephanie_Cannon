@@ -2,6 +2,9 @@
 .copy {
 
   &._hero {
+    &.--welcome {
+      max-width: 386px;
+    }
     &.--contact {
       font-weight: bold;
     }
