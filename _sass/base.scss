@@ -23,27 +23,28 @@ img {
     width: 120px;
   }
 
-  &._about {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 200px;
-    border: 2px solid;
-    @media#{$min640w} {
-      max-width: none;
-    }
-  }
+  // &._about {
+  //   width: 100%;
+  //   height: auto;
+  //   display: block;
+  //   max-width: 200px;
+  //   border: 2px solid;
+  //
+  //   @media#{$min640w} {
+  //     max-width: none;
+  //   }
+  // }
 
-  &._acting {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 200px;
-    border: 2px solid;
-    @media#{$min640w} {
-      max-width: none;
-    }
-  }
+  // &._acting {
+  //   width: 100%;
+  //   height: auto;
+  //   display: block;
+  //   max-width: 200px;
+  //   border: 2px solid;
+  //   @media#{$min640w} {
+  //     max-width: none;
+  //   }
+  // }
 }
 
 svg {
