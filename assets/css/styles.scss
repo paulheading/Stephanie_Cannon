@@ -15,10 +15,9 @@
 'wrap';
 
 %img_flex {
-  min-height: 300px;
-  max-height: 300px;
+  max-height: 220px;
   border: 2px solid;
-  max-width: 160px;
+  max-width: 180px;
 
   @media#{$min640w} {
     max-height: none;
