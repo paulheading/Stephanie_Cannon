@@ -5,27 +5,32 @@ layout: none
 function openAcc() {
   var ting = $(this),
       tingWrap = ting.children('.wrap._embed'),
-      tingIcon = ting.children('.acc');
+      tingIcon = ting.children('.acc'),
+      closeTl = new TimelineMax(),
+      openTl = new TimelineMax();
+
   if(ting.hasClass('--open')) {
-    var closeTl = new TimelineMax();
-    closeTl
-    .add('now')
-    .to(tingIcon,0.3,{rotation:0},'now')
-    .to(tingWrap,0.3,{maxHeight:0},'now')
-    .set(tingWrap,{opacity:0})
-    .set(ting,{className:'-=--open'});
+    TweenMax.set(ting,{className:'-=--open'});
+    // closeTl
+    // .add('now')
+    // .to(tingIcon,0.3,{rotation:0},'now')
+    // .to(tingWrap,0.3,{maxHeight:0},'now')
+    // .set(tingWrap,{opacity:0})
+    // .set(ting,{className:'-=--open'});
   } else {
-    var openTl = new TimelineMax();
     openTl
-    .add('then')
-    .to('.acc',0.3,{rotation:0},'then')
-    .to('.wrap._embed',0.3,{maxHeight:0},'then')
-    .set('.wrap._embed',{opacity:0})
-    .add('now')
-    .to(tingIcon,0.3,{rotation:225},'now')
-    .to(tingWrap,0.3,{maxHeight:308},'now')
-    .to(tingWrap,0.3,{opacity:1})
-    .set(ting,{className:'+=--open'});
+    .set('.row._embed',{className:'-=--open'})
+    .set(ting,{className:'+=--open'})
+    ;
+    // .add('then')
+    // .to('.acc',0.3,{rotation:0},'then')
+    // .to('.wrap._embed',0.3,{maxHeight:0},'then')
+    // .set('.wrap._embed',{opacity:0})
+    // .add('now')
+    // .to(tingIcon,0.3,{rotation:225},'now')
+    // .to(tingWrap,0.3,{maxHeight:308},'now')
+    // .to(tingWrap,0.3,{opacity:1})
+    // .set(ting,{className:'+=--open'});
   }
 }
 

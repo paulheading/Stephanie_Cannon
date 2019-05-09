@@ -22,34 +22,12 @@ img {
     display: block;
     width: 120px;
   }
-
-  // &._about {
-  //   width: 100%;
-  //   height: auto;
-  //   display: block;
-  //   max-width: 200px;
-  //   border: 2px solid;
-  //
-  //   @media#{$min640w} {
-  //     max-width: none;
-  //   }
-  // }
-
-  // &._acting {
-  //   width: 100%;
-  //   height: auto;
-  //   display: block;
-  //   max-width: 200px;
-  //   border: 2px solid;
-  //   @media#{$min640w} {
-  //     max-width: none;
-  //   }
-  // }
 }
 
 svg {
 
   &.acc {
+    transition: transform 300ms;
     margin-right: 11px;
     stroke-width: 4px;
     margin-top: 11px;

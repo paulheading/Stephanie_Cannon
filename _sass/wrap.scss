@@ -25,9 +25,10 @@
   }
 
   &._embed {
-    clear: both;
+    transition: max-height 300ms, opacity 300ms 300ms;
     overflow: hidden;
     max-height: 0;
+    clear: both;
     opacity: 0;
   }
 

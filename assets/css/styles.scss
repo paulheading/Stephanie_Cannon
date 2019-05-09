@@ -50,8 +50,10 @@
   border-left: 2px solid;
   @include cf;
 
-  &:hover {
-    background-color: rgba(black,0.1);
+  @media#{$min640w} {
+    &:hover {
+      background-color: rgba(black,0.1);
+    }
   }
 
   &:last-child {
@@ -60,6 +62,16 @@
 
   + .row {
     border-top: 2px solid;
+  }
+
+  &.--open {
+    .acc {
+      transform: rotate(225deg);
+    }
+    .wrap._embed {
+      max-height: 308px;
+      opacity: 1;
+    }
   }
 }
 
