@@ -1,4 +1,7 @@
 
 .overlay {
   @extend %overlay_block;
+  &._load {
+    background-color: $bg;
+  }
 }

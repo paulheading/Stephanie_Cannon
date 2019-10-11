@@ -33,7 +33,7 @@
   }
 
   &._pulp {
-    background-color: #e6e6e6;
+    background-color: #d1f0ee;
     @extend %wrap_block;
     border: 2px solid;
     padding-top: 24px;
@@ -52,7 +52,7 @@
   }
 
   &._client {
-    background-color: darken($bg,10%);
+    background-color: #bfdedc;
     padding: 10px;
   }
 
