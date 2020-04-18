@@ -1,2 +1,12 @@
 ---
+title : Portfolio
+include :
+  - block : hero
+  - block : voice
+  - block : pulp
+  - block : about
+  - block : motion
+  - block : acting
+  - block : contact
+  - block : logos
 ---

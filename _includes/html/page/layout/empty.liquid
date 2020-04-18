@@ -1,0 +1,24 @@
+
+{%- if page.include -%}
+
+  {%- for item in page.include -%}
+
+    {% assign base = SitePage | append : 'block/' %}
+    {% assign file = item.block | append : '.liquid' %}
+    {% assign path = base | append : file %}
+
+    <div class="area {{ item.block | prepend : '_' }}" id="{{ item.block }}">
+
+      <div class="wrap {{ item.block | prepend : '_' }}">
+
+        {%- include {{ path }} -%}
+
+      </div>
+
+    </div>
+
+  {%- endfor -%}
+
+{%- endif -%}
+
+{{ page.content | markdownify }}

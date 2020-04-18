@@ -1,20 +1,33 @@
 title: Stephanie Cannon
 description: Portfolio
-email: hello@stephaniecannon.co.uk
-url: https://stephaniecannon.co.uk
+email: steph@sparkthecannon.com
+url: https://sparkthecannon.com
 github_username: pauheading
 
 # Server config
 livereload : true
-include    : [_redirects]
-host       : 0.0.0.0
 
 # Build settings
 markdown : kramdown
 theme    : futuro
 
-defaults    :
-- scope     :
-    path    : ""
-  values    :
-    layout  : default
+exclude :
+
+  - node_modules
+  - gulp
+  - gulpfile.js
+
+setup :
+
+  install : theme
+  display : block
+  respond : true
+  share   : false
+
+defaults      :
+
+- scope       :
+    path      : ''
+  values      :
+    layout    : single
+    type      : empty

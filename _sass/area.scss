@@ -1,5 +1,5 @@
 
-.area {
+.site .area {
   position: relative;
   padding: 50px 30px;
   overflow: hidden;
@@ -8,15 +8,19 @@
   &:nth-child(even) {
     background-color: #cbeae8;
   }
+}
 
-  &._hero {
-    background-image: url('/assets/img/microphone_bg3.jpg');
-    border-bottom: 2px solid black;
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 700px;
-    padding: 50px 30px 0 30px;
-    background-color: gray;
-    color: white;
-  }
+.site .area._hero {
+  background-image: url('/assets/img/microphone_bg3.jpg');
+  border-bottom: 2px solid black;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 700px;
+  padding: 50px 30px 0 30px;
+  background-color: gray;
+  color: white;
+}
+
+.area.overlay-load {
+  background: $bg;
 }

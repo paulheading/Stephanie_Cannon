@@ -12,7 +12,7 @@
     font-size: 36px;
     padding: 20px 0;
 
-    @media#{$min640w} {
+    @media#{map-get($query,min640)} {
       padding: 0 0 20px;
     }
   }
@@ -36,7 +36,7 @@
     font-size: 36px;
     padding: 20px 0;
 
-    @media#{$min640w} {
+    @media#{map-get($query,min640)} {
       padding: 0 0 20px;
     }
   }

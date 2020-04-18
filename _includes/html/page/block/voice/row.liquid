@@ -1,0 +1,14 @@
+
+<div class="row _embed">
+
+  <div class="title _embed">{{ include.title }}</div>
+
+  {% include {{ SvgIcon }} type="acc" %}
+
+  <div class="wrap _embed">
+
+    {%- include {{ SitePage | append : 'iframe.liquid' }} type=include.type source=include.source -%}
+
+  </div>
+
+</div>

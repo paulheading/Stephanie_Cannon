@@ -11,7 +11,7 @@
   }
 
   &._pulp {
-    @media#{$min640w} {
+    @media#{map-get($query,min640)} {
       padding-right: 20px;
     }
   }

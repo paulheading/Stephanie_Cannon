@@ -1,0 +1,42 @@
+
+{%- include {{ SvgLoad | append : 'load_1.svg' }} -%}
+{%- include {{ SvgLoad | append : 'load_2.svg' }} -%}
+{%- include {{ SvgLoad | append : 'load_3.svg' }} -%}
+
+<script type="text/javascript">
+
+var SiteTl = gsap.timeline({ repeat : -1 });
+
+function LoadAnim() {
+
+  function Target(number) {
+    var output = Overlay.load.screen + ' ' + 'svg:nth-child(' + number + ')';
+    return output;
+  }
+
+  function SwitchOn(color) {
+    return {
+      display : "block",
+      fill : color
+    };
+  }
+
+  function SwitchOff() {
+    return {
+      clearProps : "display",
+      delay : Overlay.load.speed
+    };
+  }
+
+  SiteTl
+  .set(Target(1),SwitchOn("#FF6E7D"))
+  .set(Target(1),SwitchOff())
+  .set(Target(2),SwitchOn("#408080"))
+  .set(Target(2),SwitchOff())
+  .set(Target(3),SwitchOn("#002626"))
+  .set(Target(3),SwitchOff());
+}
+
+LoadAnim();
+
+</script>

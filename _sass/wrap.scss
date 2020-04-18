@@ -1,9 +1,10 @@
 
-.wrap {
+%Wrap {
+  max-width: 96rem;
+  margin: 0 auto;
+}
 
-  &._overlay {
-    @extend %wrap_overlay;
-  }
+.wrap {
 
   &._hero {
     max-width: 768px;
@@ -12,16 +13,16 @@
   }
 
   &._nav {
-    @extend %wrap_block;
+    @extend %Wrap;
   }
 
   &._about {
-    @extend %wrap_block;
+    @extend %Wrap;
     @include cf;
   }
 
   &._voice {
-    @extend %wrap_block;
+    @extend %Wrap;
   }
 
   &._embed {
@@ -34,7 +35,7 @@
 
   &._pulp {
     background-color: #d1f0ee;
-    @extend %wrap_block;
+    @extend %Wrap;
     border: 2px solid;
     padding-top: 24px;
     margin-top: 24px;
@@ -44,11 +45,11 @@
   }
 
   &._motion {
-    @extend %wrap_block;
+    @extend %Wrap;
   }
 
   &._acting {
-    @extend %wrap_block;
+    @extend %Wrap;
   }
 
   &._client {
@@ -57,6 +58,10 @@
   }
 
   &._contact {
-    @extend %wrap_block;
+    @extend %Wrap;
+  }
+
+  &._logos {
+    @extend %Wrap;
   }
 }
