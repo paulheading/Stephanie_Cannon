@@ -20,7 +20,7 @@ GEM
     ffi (1.12.2-x64-mingw32)
     ffi (1.12.2-x86-mingw32)
     forwardable-extended (2.6.0)
-    futuro (0.7.9)
+    futuro (0.8.1)
       jekyll (~> 3.8)
       jekyll-autoprefixer (~> 1.0)
       jekyll-feed (~> 0.9)
@@ -80,7 +80,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
-  futuro (~> 0.7.9)
+  futuro (~> 0.8.1)
   jekyll (~> 3.8.3)
   jekyll-autoprefixer
 
