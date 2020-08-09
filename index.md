@@ -1,5 +1,4 @@
 ---
-title : Portfolio
 include :
   - block : hero
   - block : voice
@@ -9,4 +8,5 @@ include :
   - block : acting
   - block : contact
   - block : logos
+  - block : social
 ---

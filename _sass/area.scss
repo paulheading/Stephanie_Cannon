@@ -5,6 +5,11 @@
   overflow: hidden;
   z-index: 2;
 
+  &._social {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
   &:nth-child(even) {
     background-color: #cbeae8;
   }
