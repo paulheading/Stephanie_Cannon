@@ -1,36 +1,26 @@
 ---
 ---
 
-@import
-"futuro.lite",
-"helpers",
-"base",
-"area",
-"copy",
-"overlay",
-"lnk",
-"split",
-"title",
-"wrap";
+@import "futuro.lite", "helpers", "base", "area", "copy", "overlay", "lnk",
+  "split", "title", "wrap";
 
 .site {
   background: transparent;
 }
 
 .img {
-
   &._about {
-    background: url('/assets/img/studio.jpg') no-repeat center;
+    background: url("/assets/img/studio.jpg") no-repeat center;
     background-size: cover;
     height: 100%;
 
-    @media#{$min960w} {
+    @media #{$min960w} {
       height: calc(100% + 60px);
     }
   }
 
   &._acting {
-    background: url('/assets/img/headshot.jpg') no-repeat center;
+    background: url("/assets/img/headshot.jpg") no-repeat center;
     background-size: cover;
     height: 100%;
   }
@@ -46,9 +36,9 @@
   border-left: 2px solid;
   @include cf;
 
-  @media#{map-get($query,min640)} {
+  @media #{map-get($query,min640)} {
     &:hover {
-      background-color: rgba(black,0.1);
+      background-color: rgba(black, 0.1);
     }
   }
 
@@ -81,7 +71,7 @@
     }
   }
 
-  @media#{map-get($query,min640)} {
+  @media #{map-get($query,min640)} {
     padding-right: 5px;
     padding-left: 5px;
     width: 50%;

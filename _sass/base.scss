@@ -1,4 +1,3 @@
-
 body {
   background-color: $bg;
   font-size: 1.6rem;
@@ -6,13 +5,14 @@ body {
 }
 
 img {
-
   &._microphone {
     height: auto;
     width: 160px;
 
-    @media#{map-get($query,min640)} {
+    @media #{map-get($query,min640)} {
+      position: absolute;
       width: 240px;
+      bottom: 0;
     }
   }
 
@@ -26,7 +26,6 @@ img {
 }
 
 svg {
-
   &.acc {
     transition: transform 300ms;
     margin-right: 11px;
@@ -42,7 +41,6 @@ svg {
 }
 
 ul {
-
   &._nav {
     cursor: pointer;
     @include cf;
@@ -62,7 +60,6 @@ ul {
 }
 
 li {
-
   &._nav {
     float: left;
 
@@ -83,7 +80,7 @@ li {
     float: left;
     width: 50%;
 
-    @media#{$min440w} {
+    @media #{$min440w} {
       width: 20%;
     }
   }
