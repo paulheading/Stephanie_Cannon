@@ -33,11 +33,10 @@
     opacity: 0;
   }
 
-  &._pulp {
+  &._latest {
     background-color: #d1f0ee;
     @extend %Wrap;
     border: 2px solid;
-    padding-top: 24px;
     margin-top: 24px;
     max-width: 600px;
     height: 116px;

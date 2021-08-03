@@ -2,7 +2,7 @@
 include :
   - block : hero
   - block : voice
-  - block : pulp
+  - block : latest
   - block : about
   - block : motion
   - block : acting

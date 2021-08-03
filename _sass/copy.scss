@@ -10,7 +10,9 @@
     }
   }
 
-  &._pulp {
+  &._latest {
+    padding-top: 12px;
+
     @media#{map-get($query,min640)} {
       padding-right: 20px;
     }

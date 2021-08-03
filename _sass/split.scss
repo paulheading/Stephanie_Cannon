@@ -15,7 +15,7 @@
     float: left;
     width: 50%;
 
-    &.--pulp {
+    &.--latest {
       width: 100%;
       @media#{map-get($query,min640)} {
         width: 25%;
@@ -55,11 +55,9 @@
       }
     }
 
-    &.--pulp {
+    &.--latest {
       width: 100%;
-      padding-top: 20px;
       @media#{map-get($query,min640)} {
-        padding-top: 0;
         width: 75%;
       }
     }
