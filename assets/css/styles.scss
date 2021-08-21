@@ -34,6 +34,7 @@
 .row {
   border-right: 2px solid;
   border-left: 2px solid;
+  overflow: hidden;
   @include cf;
 
   @media #{map-get($query,min640)} {
