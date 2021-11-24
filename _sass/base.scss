@@ -83,6 +83,14 @@ li {
     @media #{$min440w} {
       width: 20%;
     }
+
+    &.artscouncil {
+      width: 70%;
+      
+      @media #{$min440w} {
+        width: 30%;
+      } 
+    }
   }
 }
 
